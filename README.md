@@ -10,16 +10,34 @@ directly underneath your app root, we can easily wrap require with this base
 path and allow you to specify only a top-level directory and subpath to the
 desired module you want to require.
 
-## Example...
+## Simplest example...
 
 ```
 var rqr = require('rqr'),
-      Author = rqr('schemas/author');
+    Author = rqr('schemas/author');
 ```
 
 This statement would work inside any module no matter how deeply nested within
 your app's folder structure if the schemas folder exists (as in this example)
 at the top/root level within your app.
+
+## Using withPrefix()
+If your project folder tree goes several levels deep, use withPrefix() to create
+an `rqr` object based at a prefixed lower level...
+
+```
+var rqrSchemas = require('rqr').withPrefix('schemas'),
+    Author = rqrSchemas('author');
+```
+
+## Using withRoot()
+If you need to include a parallel project outside of your project folder tree,
+use withRoot() to set a full base path for your `rqr` object...
+
+```
+var rqrProjectB = require('rqr').withRoot('~/node-apps/project-b/'),
+    ModelB = rqrProjectB('schemas/model-b');
+```
 
 ## Contributing
 
