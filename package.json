@@ -1,6 +1,6 @@
 {
   "name": "rqr",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "App root-resolving convenience wrapper for require.",
   "author": "sineLABS LLC",
   "keywords": [
