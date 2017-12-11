@@ -1,6 +1,6 @@
 {
   "name": "rqr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "App root-resolving convenience wrapper for require.",
   "author": "sineLABS LLC",
   "keywords": [
@@ -10,12 +10,12 @@
     "root"
   ],
   "main": "rqr.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/sinelabs/rqr.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinelabs/rqr.git"
   },
-  "bugs" : {
-    "url" : "https://github.com/sinelabs/rqr/issues"
+  "bugs": {
+    "url": "https://github.com/sinelabs/rqr/issues"
   },
   "licenses": [
     {
@@ -23,10 +23,8 @@
       "url": "https://github.com/sinelabs/rqr/raw/master/LICENSE"
     }
   ],
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">= 0.4.0"
   }
